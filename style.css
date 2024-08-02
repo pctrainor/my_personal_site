@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6ded6da; /* Dull white background */
+  }
+  
+  /* Colors */
+  :root {
+    --navy-blue: #00203F;
+    --gold: #FFD700;
+  }
+  
+  /* Header h1 Styles */
+  header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Times New Roman', serif; /* Replace with preferred font */
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: var(--navy-blue);
+    color: rgb(118, 155, 121);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* About Section Styles */
+  #about {
+    border: 2px solid #B8860B; /* Gold border */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* About img styles */
+  #about img {
+    border-radius: 50%;
+    width: 200px;
+  }
+  
+  /* education and experience Styles */
+  #education, #experience {
+    border: 2px solid #B8860B; /* Gold border */
+    padding: 20px;
+    transition: all 0.3s ease; /* Add transition for smooth effect */
+  }
+  
+  /* hover over behavior for classes */
+  #education:hover, #experience:hover {
+    padding: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  /* click behavior for classes */
+  #education.isExpanded, #experience.isExpanded {
+    /* Use isExpanded class for conditional styles */
+    padding: 60px;
+  }
+  
+  /* education and experience content Styles */
+  section#education .education-content,
+  section#experience .experience-content {
+    display: none; /* Hide content initially */
+  }
+  
+  /* Class styles */
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Class styles */
+  .image-container img {
+    width: 20%; /* Adjust width as needed */
+    height: auto;
+    margin: 0 10px;
+  }
+  
+  /* Class styles */
+  .links {
+    text-align: center; /* Center the links horizontally */
+    margin-top: 20px; /* Add some space above the links */
+  }
+  
+  /* Class styles */
+  .links a {
+    margin: 0 10px; /* Add some spacing between links */
+    color: #00203F; /* Use your Navy Blue color */
+    text-decoration: none; /* Remove underline initially */
+  }
+  
+  /* Class styles */
+  .links a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  /* Class styles */
+  .dot {
+    margin: 0 10px; /* Adjust margin as needed */
+  }
+  
+  /* Class styles */
+  .links a, .links .dot {
+    display: inline-block; /* Force elements to behave like block elements */
+    margin: 0 5px; /* Adjust margin as needed */
+  }
+  
+  /* Footer Styles */
+  footer {
+    border: 2px solid #B8860B; /* Gold border */
+    background-color: var(--navy-blue);
+    color: white;}
