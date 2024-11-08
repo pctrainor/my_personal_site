@@ -113,3 +113,15 @@ body {
     border: 2px solid #B8860B; /* Gold border */
     background-color: var(--navy-blue);
     color: white;}
+
+  #pdf-section {
+    margin-top: 20px;
+  }
+
+  #pdf-section h2 {
+    cursor: pointer;
+  }
+
+  .pdf-content {
+    margin-top: 10px;
+  }

@@ -82,6 +82,17 @@
             margin-top: 0; 
             line-height: 1.4; 
         }
+        #pdf-section {
+            margin-top: 20px;
+        }
+
+        #pdf-section h2 {
+            cursor: pointer;
+        }
+
+        .pdf-content {
+            margin-top: 10px;
+        }
         @media (max-width: 600px) {
             header {
                 padding: 10px 0;
@@ -122,7 +133,15 @@
             </div>
         </section>
     </div>
-
+    <div class="container">
+        <div id="pdf-section">
+            <h2>Resume</h2>
+            <div class="pdf-content" style="display: none;">
+                <iframe src="resume.pdf" width="100%" height="500px" onload="this.style.display='block'"></iframe>
+                <a href="resume.pdf" download>Download Resume</a>
+            </div>
+        </div>
+    </div>
     <script>
         // Select all elements with the "fade-in" class
         const fadeInElements = document.querySelectorAll('.fade-in');
@@ -137,6 +156,12 @@
         // Loop through the elements and apply the fade-in effect with a delay
         fadeInElements.forEach((element, index) => {
             showElement(element, index * 500); 
+        });
+
+        // Add click event listener to toggle PDF content display
+        document.querySelector('#pdf-section h2').addEventListener('click', () => {
+            const pdfContent = document.querySelector('.pdf-content');
+            pdfContent.style.display = pdfContent.style.display === 'none' ? 'block' : 'none';
         });
     </script>
 </body>
