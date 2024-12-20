@@ -127,9 +127,9 @@ body {
   }
 
 .container {
-    width: 90%;
+    width: 75%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin:  auto;
     padding: 20px 0;
 }
 .profile-pic {
@@ -235,4 +235,10 @@ body {
 }
 #about h2 {
     text-align: center;
+}
+
+#recent-work {
+  padding: 20px; /* Adjust the padding value as needed */
+  margin: 0 auto;
+  max-width: 1200px; /* Optional: Set a max-width to limit the width of the section */
 }
