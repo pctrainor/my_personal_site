@@ -242,3 +242,12 @@ body {
   margin: 0 auto;
   max-width: 1200px; /* Optional: Set a max-width to limit the width of the section */
 }
+
+.qr-code img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+  margin: 0 auto;
+  width: 75px;
+  height: 75px;
+}
