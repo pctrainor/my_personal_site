@@ -20,3 +20,10 @@ if (experienceSection) {
 if (pdfSection) {
   pdfSection.addEventListener('click', () => handleSectionClick(pdfSection));
 }
+
+// Add click event listener to toggle PDF content display and adjust font size
+document.querySelector('#pdf-section h2').addEventListener('click', () => {
+  const pdfContent = document.querySelector('.pdf-content');
+  pdfContent.style.display = pdfContent.style.display === 'none' ? 'block' : 'none';
+  pdfSection.querySelector('h2').style.fontSize = pdfContent.style.display === 'block' ? '1.05em' : 'initial';
+});
