@@ -219,6 +219,10 @@ body {
     color: blue;
 }
 
+#pdf-section h2.closed::after {
+    width: 50px;
+}
+
 .pdf-content {
     margin-top: 10px;
 }
