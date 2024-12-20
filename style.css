@@ -15,6 +15,7 @@ body {
   /* Header h1 Styles */
   header h1 {
     font-size: 36px;
+    border-color: 1px rgb(247, 229, 229);
     font-weight: bold;
     font-family: 'Times New Roman', serif; /* Replace with preferred font */
   }
@@ -24,6 +25,7 @@ body {
     background-color: var(--navy-blue);
     color: #e2ad26 /* Gold text color */;
     padding: 20px;
+    border: 2px solid #B8860B; /* Gold border */
     text-align: center;
   }
   
