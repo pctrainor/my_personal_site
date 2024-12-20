@@ -30,6 +30,7 @@ body {
   /* About Section Styles */
   #about {
     border: 2px solid #B8860B; /* Gold border */
+    border-radius: 15px; /* Rounded corners */
     padding: 20px;
     text-align: center;
   }
@@ -248,6 +249,7 @@ body {
   padding-bottom: 20px;
   display: block;
   margin: 0 auto;
-  width: 75px;
-  height: 75px;
+  width: 100%;
+  max-width: 100px; /* Adjust max-width as needed */
+  height: auto;
 }
