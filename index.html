@@ -29,7 +29,7 @@
                 <span class="dot">&#8226;</span>
                 <a href="https://github.com/pctrainor" target="_blank">GitHub</a>
                 <br/><br/>
-                <a href="https://pctrainor.github.io/react_portfolio/" target="_blank">My React JSX Landing Page</a>
+                <a href="https://github.com/pctrainor/react_portfolio/blob/main/src/App.js" target="_blank">My React App.js</a> 
             </div>
         </section>
     </div>
@@ -60,22 +60,18 @@
         </div>
     </div>
     <script>
-        // Select all elements with the "fade-in" class
         const fadeInElements = document.querySelectorAll('.fade-in');
 
-        // Function to show an element after a delay
         function showElement(element, delay) {
             setTimeout(() => {
                 element.classList.add('show'); 
             }, delay);
         }
 
-        // Loop through the elements and apply the fade-in effect with a delay
         fadeInElements.forEach((element, index) => {
             showElement(element, index * 500); 
         });
 
-        // Add click event listener to toggle PDF content display
         document.querySelector('#pdf-section h2').addEventListener('click', () => {
             const pdfContent = document.querySelector('.pdf-content');
             pdfContent.style.display = pdfContent.style.display === 'none' ? 'block' : 'none';
