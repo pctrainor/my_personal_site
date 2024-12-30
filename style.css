@@ -271,7 +271,9 @@ body {
 .project iframe {
   display: block;
   margin: 10px auto; /* Center horizontally */
-  max-width: 80%; /* Limit the width of the iframe */
+  width: 100%; /* Set width to 100% */
+  max-width: 400px; /* Adjust max-width as needed */
+  height: auto; /* Maintain aspect ratio */
 }
 
 /* Resume Call-to-Action Styles */
