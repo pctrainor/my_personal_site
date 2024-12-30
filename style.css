@@ -1,9 +1,9 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e6ded6da; /* Dull white background */
+    background-color: #b4b4b46e; /* Dull white background */
   }
   
   /* Colors */
@@ -22,16 +22,16 @@ body {
   
   /* Header Styles */
   header {
-    background-color: var(--navy-blue);
-    color: #d9c183 /* Gold text color */;
-    padding: 20px;
-    border-bottom: 2px solid #B8860B; /* Gold border */
-    text-align: center;
+      background-color: var(--navy-blue);
+      color: #d9c183; /* Gold text color */
+      padding: 20px;
+      border-bottom: 2px solid #B8860B; /* Gold border */
+      text-align: center;
   }
   
   /* About Section Styles */
   #about {
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
     border: 2px solid #B8860B; /* Gold border */
     border-radius: 15px; /* Rounded corners */
     padding: 20px;
@@ -147,6 +147,7 @@ body {
 .profile-pic img {
     width: 100%;
     height: auto;
+    border: 2px solid #B8860B;; /* Add border */
 }
 .social-icons {
     text-align: center;
@@ -261,3 +262,18 @@ body {
   max-width: 100px; /* Adjust max-width as needed */
   height: auto;
 }
+
+.project {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.project h3 {
+  margin-top: 0;
+}
+.project iframe {
+  display: block;
+  margin: 10px auto;
+}
+

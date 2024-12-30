@@ -13,59 +13,88 @@
     <header>
         <h1>Phillip C. Trainor</h1> 
     </header>
+
     <div class="container">
-        <div class="profile-pic fade-in">
-            <br/><img src="pics/headshot.png" alt="Phillip C. Trainor"> 
+    <div class="profile-pic fade-in">
+        <img src="pics/headshot.png" alt="Phillip C. Trainor"> 
+    </div>
+
+    <section id="about" class="fade-in"> 
+        <h2>About Me</h2>
+        <p>Proven leader and problem solver who has served in a wide variety of management roles spanning from technical program management to high-stakes project planning and execution.</p>
+        <div class="links">
+        <a href="https://www.linkedin.com/in/trainorp/" target="_blank">LinkedIn</a>
+        <span class="dot">&#8226;</span>
+        <a href="mailto:ptrainor@uark.edu">ptrainor@uark.edu</a>
+        <span class="dot">&#8226;</span>
+        <a href="https://github.com/pctrainor" target="_blank">GitHub</a>
+        <br><br>
+        <a href="https://pctrainor.github.io/react_portfolio/" target="_blank">My React App.js</a> 
         </div>
-    </br>
-        <section id="about" class="fade-in"> 
-            <h2>About Me</h2>
-            <p>Proven leader and problem solver who has served in a wide variety of management roles spanning from technical program management to high-stakes project planning and execution.</p>
-            <div class="links">
-                <a href="https://www.linkedin.com/in/trainorp/" target="_blank">LinkedIn</a>
-                <span class="dot">&#8226;</span>
-                <a href="mailto:ptrainor@uark.edu">ptrainor@uark.edu</a>
-                <span class="dot">&#8226;</span>
-                <a href="https://github.com/pctrainor" target="_blank">GitHub</a>
-                <br/><br/>
-                <a href="https://pctrainor.github.io/react_portfolio/" target="_blank">My React App.js</a> 
-            </div>
-        </section>
+    </section>
     </div>
     <div class="container">
         <section id="recent-work" class="fade-in">
-            <h2>Recent Work</h2>
-            <h3>Drone Delivery API that I created!</h3>
-            <iframe width="330" height="215" src="https://www.youtube.com/embed/V656tg3ssGs?si=NS_8V8iVBHH52jfv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <br/><h3>Using Gen-AI to analyze my data visualizations:</h3>
-            <iframe width="330" height="215" src="https://www.youtube.com/embed/6J46STRXbIU?si=YOdOeeqCjt8XSCwF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h3>Image to JSON Generative AI Project:</h3><p>I connected a React frontend to a Firebase function backend, ran through node.js and Google Cloud Vertex AI API. This demonstrates my ability to connect generative AI models to web applications, enhancing creativity and longevity of the app.</p>
-            <iframe width="330" height="215" src="https://www.youtube.com/embed/1sySk-t-XI8?si=5hlp0-8exRiKftTy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h3>Javscript Review Program for new concepts (2014-2024)</h3>
-            <p>I designed this program to update myself on the latest JavaScript concepts that have emergedn over the past decade. JavaScript is one of my favorite programming languages; continuing to stay current on the latest js trends is vital to success in web development!</p>
-            <a href="https://pctrainor.github.io/javscript_update/">https://pctrainor.github.io/javscript_update/</a>
-            <h3>Project Showcase: PMP Flashcards:</h3>
-            <p>I developed a flashcard application using JavaScript and JSON to prepare for the PMP exam, which helped me pass successfully.</p>
-            <h4>Key Features:</h4>
-            <ul>
-                <li><strong>Extensive Question Bank:</strong> Over 250 PMP exam sample questions.</li>
-                <li><strong>Formula Breakdown:</strong> Clear breakdown of essential mathematical formulas.</li>
-                <li><strong>Interactive Learning:</strong> Encourages active recall and spaced repetition.</li>
-                <li><strong>Generative AI Integration:</strong> Efficiently created diverse practice questions.</li>
-            </ul>
-            <p>This project demonstrates my ability to apply technical skills, solve real-world problems, utilize AI for content creation, and achieve goals.</p>
-            <p><a href="https://pmp-flash.web.app/" target="_blank">https://pmp-flash.web.app/</a></p>
-            <p><a href="https://security-plus-flash.web.app/" target="_blank">Another site I am working on for Security+!</a></p>
-        </section>
+        <h2>Recent Work</h2>
+
+        <div class="project">
+        <h3>Drone Delivery API</h3>
+        <p>This Drone Delivery API offers a comprehensive solution for managing and tracking drone deliveries. It leverages a Python Flask server to handle backend logic, storing crucial information about drones and pilots, and integrates with Google Maps API for real-time drone tracking visualized on a vanilla HTML and JavaScript frontend.</p>
+        <iframe width="330" height="215" src="https://www.youtube.com/embed/V656tg3ssGs?si=NS_8V8iVBHH52jfv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="project">
+        <h3>Using Gen-AI to Analyze Data Visualizations</h3>
+        <p>This video demonstrates my use of a large language model (LLM) - Gemini AI - to refine my data visualizations. In a simulated scenario, I leverage AI feedback to improve my work, highlighting my commitment to clear communication and high-quality outputs.</p>
+        <iframe width="330" height="215" src="https://www.youtube.com/embed/6J46STRXbIU?si=YOdOeeqCjt8XSCwF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="project">
+        <h3>Image to JSON Generative AI Project</h3>
+        <p>I connected a React frontend to a Firebase function backend, ran through node.js and Google Cloud Vertex AI API. This demonstrates my ability to connect generative AI models to web applications, enhancing creativity and longevity of the app.</p>
+        <iframe width="330" height="215" src="https://www.youtube.com/embed/1sySk-t-XI8?si=5hlp0-8exRiKftTy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="project">
+        <h3>JavaScript Review Program for New Concepts (2014-2024)</h3>
+        <p>I designed this program to update myself on the latest JavaScript concepts that have emerged over the past decade. JavaScript is one of my favorite programming languages; continuing to stay current on the latest js trends is vital to success in web development!</p>
+        <a href="https://pctrainor.github.io/javscript_update/">https://pctrainor.github.io/javscript_update/</a>
+        </div>
+
+        <div class="project">
+        <h3>Vanilla JS Firebase Web Apps</h3>
+        <p>I developed some flashcard applications using JavaScript and JSON to prepare for the PMP exam.</p>
+        <h4>Key Features:</h4>
+        <p>This project demonstrates my ability to apply technical skills, solve real-world problems, utilize AI for content creation, and achieve goals.</p>
+        <a href="https://pmp-flash.web.app/" target="_blank">https://pmp-flash.web.app/</a>
+        <br>
+        <a href="https://security-plus-flash.web.app/" target="_blank">Another site I am working on for Security+!</a>
+        </div>
+
+    </section>
     </div>
     <div class="container">
-        <div id="pdf-section">
-            <h2 class="clickable">(click for full resume)</h2>
-            <div class="pdf-content" style="display: none;">
-                <iframe src="resume.pdf" width="100%" height="500px" onload="this.style.display='block'"></iframe>
-                <a href="resume.pdf" download>Download Resume</a>
-            </div>
+        <section id="resume-call-to-action" class="fade-in">
+            <h2>Interested in Learning More?</h2>
+                <p>
+                    Check out my resume below for more information on the projects and programs I've led over the past decade. As a former Naval Aviator and Officer, I bring a unique blend of leadership, problem-solving, and technical skills to the tech world.
+                </p>
+                <p>My resume highlights my experience in:</p>
+                <ul>
+                    <li>Leading high-performing teams</li>
+                    <li>Managing complex projects</li>
+                    <li>Analyzing data and making critical decisions</li>
+                    <li>Adapting to challenging environments</li>
+                </ul>
+                <p>I'm eager to apply these skills to a new career in technology and contribute to innovative and impactful projects.</p>
+                <div id="pdf-section">
+                    <h2 class="clickable">(click to view/download resume)</h2>
+                    <div class="pdf-content" style="display: none;">
+                    <iframe src="resume.pdf" width="100%" height="500px" onload="this.style.display='block'"></iframe>
+                    <a href="resume.pdf" download>Download Resume</a>
+                    </div>
         </div>
+        </section>
     </div>
     <script>
         const fadeInElements = document.querySelectorAll('.fade-in');
