@@ -1,298 +1,154 @@
-/* General Styles */
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #b4b4b46e; /* Dull white background */
-    --white: #FFFFFF;
-  }
-  
-  /* Colors */
-  :root {
-    --navy-blue: #00203F;
-    --gold: #FFD700;
-  }
-  
-  /* Header h1 Styles */
-  header h1 {
-    font-size: 36px;
-    border-color: 1px rgb(247, 229, 229);
-    font-weight: bold;
-    font-family: 'Times New Roman', serif; /* Replace with preferred font */
-  }
-  
-  /* Header Styles */
-  header {
-      background-color: var(--navy-blue);
-      color: #d9c183; /* Gold text color */
-      padding: 20px;
-      border-bottom: 2px solid #B8860B; /* Gold border */
-      text-align: center;
-  }
-  
-  /* About Section Styles */
-  #about {
-    background-color: rgb(255, 255, 255);
-    border: 2px solid #B8860B; /* Gold border */
-    border-radius: 15px; /* Rounded corners */
-    padding: 10px; /* Reduced padding */
-    text-align: center;
-  }
-  
-  /* About img styles */
-  #about img {
-    border-radius: 50%;
-    width: 100px; /* Reduced width */
-  }
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  background-color: #1f1f1f;
+  margin: 0;
+  padding: 0;
+}
 
-  /* About a styles */
-  #about a {
-    color: #00203F; /* Navy Blue text color */
-    text-decoration: none; /* Remove underline */
-    font-style: italic;
-  }
-  /* education and experience Styles */
-  #education, #experience {
-    border: 2px solid #B8860B; /* Gold border */
-    padding: 20px;
-    transition: all 0.3s ease; /* Add transition for smooth effect */
-  }
-  
-  /* hover over behavior for classes */
-  #education:hover, #experience:hover {
-    padding: 30px;
-    font-size: 1.2em;
-    cursor: pointer;
-  }
-  
-  /* click behavior for classes */
-  #education.isExpanded, #experience.isExpanded {
-    /* Use isExpanded class for conditional styles */
-    padding: 60px;
-  }
-  
-  /* education and experience content Styles */
-  section#education .education-content,
-  section#experience .experience-content {
-    display: none; /* Hide content initially */
-  }
-  
-  /* Class styles */
-  .image-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  /* Class styles */
-  .image-container img {
-    width: 20%; /* Adjust width as needed */
-    height: auto;
-    margin: 0 10px;
-  }
-  
-  /* Class styles */
-  .links {
-    text-align: center; /* Center the links horizontally */
-    margin-top: 20px; /* Add some space above the links */
-  }
-  
-  /* Class styles */
-  .links a {
-    margin: 0 10px; /* Add some spacing between links */
-    color: #00203F; /* Use your Navy Blue color */
-    text-decoration: none; /* Remove underline initially */
-  }
-  
-  /* Class styles */
-  .links a:hover {
-    text-decoration: underline; /* Add underline on hover */
-  }
-  
-  /* Class styles */
-  .dot {
-    margin: 0 10px; /* Adjust margin as needed */
-  }
-  
-  /* Class styles */
-  .links a, .links .dot {
-    display: inline-block; /* Force elements to behave like block elements */
-    margin: 0 5px; /* Adjust margin as needed */
-  }
-  
-  /* Footer Styles */
-  footer {
-    border-top: 2px solid #B8860B; /* Gold border */
-    background-color: var(--navy-blue);
-    color: white;}
+header {
+  background-color: #00203F; /* Navy Blue */
+  color: #ADEFD1; /* Mint Green */
+  padding: 10px 0;
+  text-align: center;
+}
 
-  #pdf-section {
-    margin-top: 20px;
-  }
+nav {
+  background-color: #00203F; /* Navy Blue */
+  padding: 10px 0;
+}
 
-  #pdf-section h2 {
-    cursor: pointer;
-  }
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
 
-  .pdf-content {
-    margin-top: 10px;
-  }
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ADEFD1; /* Mint Green */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #FF6347; /* Tomato */
+}
 
 .container {
-    width: 75%;
-    max-width: 1200px;
-    margin:  auto;
-    padding: 20px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
-.profile-pic {
-    width: 50vw;
-    max-width: 200px;
-    height: auto;
-    border-radius: 50%; 
-    overflow: visible;
-    margin: auto;
-}
+
 .profile-pic img {
-    width: 100%;
-    height: auto;
-    border: 2px solid #B8860B; /* Add border */
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
-.social-icons {
-    text-align: center;
-    margin: 20px 0;
-}
-.social-icons a {
-    color: #333;
-    margin: 0 10px;
-    font-size: 24px;
-    transition: color 0.3s;
-}
-.social-icons a:hover {
-    color: #0073e6;
-}
-.fade-in {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-.fade-in.show {
-    opacity: 1;
-}
-/* Duplicate rules removed */
-#education, 
-#experience {
-    margin-top: 30px; 
-}
-.education-list h3,
-.experience-item h3 {
-    margin-bottom: 5px; 
-}
-.education-list p,
-.experience-item p {
-    margin-top: 0; 
-    line-height: 1.4; 
-}
-#pdf-section {
-    margin-top: 20px;
-    text-align: center;
+.links {
+  text-align: center;
 }
 
-#pdf-section h2 {
-    cursor: pointer;
-    position: relative;
-    display: inline-block;
+.links a {
+  color: #ADEFD1; /* Navy Blue */
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
 }
 
-#pdf-section h2::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 4px;
-    background: #0073e6;
-    margin: 10px auto 0;
-    transition: width 0.3s;
+.links a:hover {
+  color: #FF6347; /* Tomato */
 }
 
-#pdf-section h2:hover::after {
-    width: 100px;
-    color: blue;
+.iframe-container {
+  position: relative;
+  width: 90%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
-#pdf-section h2.closed::after {
-    width: 50px;
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
-.pdf-content {
-    margin-top: 10px;
-}
 @media (max-width: 600px) {
-    header {
-        padding: 10px 0;
-    }
-    .container {
-        width: 95%;
-        padding: 10px 0;
-    }
-    .social-icons a {
-        font-size: 20px;
-        margin: 0 5px;
-    }
-    .links a {
-        margin: 0 5px;
-    }
+  header {
+      padding: 10px 0;
+  }
+  .container {
+      width: 90%;
+      padding: 10px 0;
+  }
+  .social-icons a {
+      font-size: 20px;
+      margin: 0 5px;
+  }
+  .links a {
+      margin: 0 5px;
+  }
 }
+
 #about h2 {
-    text-align: center;
+  text-align: center;
 }
 
 #recent-work {
-  padding: 20px; /* Adjust the padding value as needed */
-  margin: 0 auto;
-  max-width: 1200px; /* Optional: Set a max-width to limit the width of the section */
+  margin-top: 20px;
+}
+
+.qr-code {
+  text-align: center;
+  margin-top: 20px;
 }
 
 .qr-code img {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 100px; /* Adjust max-width as needed */
-  height: auto;
-}
-
-.project {
-  margin-bottom: 20px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-.project h3 {
-  margin-top: 0;
-}
-.project iframe {
-  display: block;
-  margin: 10px auto; /* Center horizontally */
-  width: 100%; /* Set width to 100% */
-  max-width: 400px; /* Adjust max-width as needed */
+  width: 100px; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure it doesn't exceed the container width */
 }
 
-/* Resume Call-to-Action Styles */
-.resume-call-to-action {
+footer {
   text-align: center;
-  margin: 40px 0;
+  padding: 20px 0;
+  background-color: #00203F; /* Navy Blue */
+  color: #ADEFD1; /* Mint Green */
+  margin-top: 20px;
 }
 
-#resume-call-to-action {
-  display: inline-block;
-  padding: 10px 25px;
-  background-color: var(--navy-blue);
-  color: var(--white);
+a{
+  color: #ADEFD1; /* Mint Green */
+  text-decoration: none;
+}
+a:hover {
+  color: #FF6347; /* Tomato */
+}
+
+#resume-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#resume_link {
+  color: #ADEFD1; /* Mint Green */
   text-decoration: none;
   font-weight: bold;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-#resume-call-to-action p, li{
-  font-weight: lighter;
+  transition: color 0.3s;
+  text-align: center;
 }
