@@ -6,120 +6,132 @@
     <title>Phillip C. Trainor - PMP</title> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <style>
-    </style>
 </head>
 <body>
     <header>
         <h1>Phillip C. Trainor</h1> 
     </header>
-
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#recent-work">Recent Work</a></li>
+            <li><a href="#resume-call-to-action">Resume</a></li>
+        </ul>
+    </nav>
     <div class="container">
-    <div class="profile-pic fade-in">
-        <img src="pics/headshot.png" alt="Phillip C. Trainor"> 
+        <div class="profile-pic fade-in">
+            <img src="pics/headshot.png" alt="Phillip C. Trainor"> 
+        </div>
+
+        <section id="about" class="fade-in"> 
+            <h2>About Me</h2>
+            <p>Proven leader and problem solver who has served in a wide variety of management roles spanning from technical program management to high-stakes project planning and execution.</p>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/trainorp/" target="_blank">LinkedIn</a>
+                <span class="dot">&#8226;</span>
+                <a href="mailto:ptrainor@uark.edu">ptrainor@uark.edu</a>
+                <span class="dot">&#8226;</span>
+                <a href="https://github.com/pctrainor" target="_blank">GitHub</a>
+                <br><br>
+                <a href="https://pctrainor.github.io/react_portfolio/" target="_blank">My React App.js</a> 
+            </div>
+        </section>
     </div>
 
-    <section id="about" class="fade-in"> 
-        <h2>About Me</h2>
-        <p>Proven leader and problem solver who has served in a wide variety of management roles spanning from technical program management to high-stakes project planning and execution.</p>
-        <div class="links">
-        <a href="https://www.linkedin.com/in/trainorp/" target="_blank">LinkedIn</a>
-        <span class="dot">&#8226;</span>
-        <a href="mailto:ptrainor@uark.edu">ptrainor@uark.edu</a>
-        <span class="dot">&#8226;</span>
-        <a href="https://github.com/pctrainor" target="_blank">GitHub</a>
-        <br><br>
-        <a href="https://pctrainor.github.io/react_portfolio/" target="_blank">My React App.js</a> 
-        </div>
-    </section>
-    </div>
     <div class="container">
         <section id="recent-work" class="fade-in">
-        <h2>Recent Work:</h2>
-        <article class="project">
-            <h3>AI-Powered Website Layout Generator:</h3>
-            <p>This project demonstrates the use of AI to rapidly prototype website layouts. By providing a simple natural language description (e.g., "a website for a local bakery with a focus on cakes"), the system generates a basic HTML structure, giving developers a quick starting point for their projects.</p>
-            <p><b>Key Features:</b></p>
-            <ul>
-            <li><b>AI-Driven HTML Generation:</b> Uses OpenAI's GPT models to interpret user descriptions and create corresponding HTML.</li>
-            <li><b>Iterative Refinement:</b> Allows users to progressively refine the generated layout by requesting more details or specific features.</li>
-            <li><b>Backend API (Flask):</b> A Python Flask backend handles communication with the AI and manages data exchange.</li>
-            <li><b>Frontend Interface (HTML, CSS, JavaScript):</b> A clean and intuitive user interface built with standard web technologies.</li>
-        </ul>
-        <p><b>Tech Stack:</b> Python (Flask), OpenAI API (GPT-3.5-turbo), HTML, CSS, JavaScript</p>
-        <iframe width="330" height="215" src="https://www.youtube.com/embed/ZX3zpiCaNUM?si=jdPnKiRi35dAvN2j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </article>
-        <article class="project">
-            <h3>YouTube Comments Analyzer:</h3>
-            <p>This Flask web app lets you analyze YouTube comments. Enter a video URL, and it grabs comments using the YouTube Data API. It then stores them in an SQLite database and generates a word cloud visualization using the WordCloud library. You can even search through the comments!</p>
-            <p><b>Tech Stack:</b></p>
-            <ul>
-                <li><b>Backend:</b> Python, Flask</li>
-                <li><b>API:</b> YouTube Data API</li>
-                <li><b>Database:</b> SQLite</li>
-                <li><b>Visualization:</b> WordCloud (Python library)</li>
-                <li><b>Frontend:</b> HTML, CSS, JavaScript</li>
-            </ul>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/evxpQXd3sK8?si=7pQsa4DZJ2kPuT1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </article>
-        <div class="project">
-        <h3>Drone Delivery API:</h3>
-        <p>This Drone Delivery API offers a comprehensive solution for managing and tracking drone deliveries. It leverages a Python Flask server to handle backend logic, storing crucial information about drones and pilots, and integrates with Google Maps API for real-time drone tracking visualized on a vanilla HTML and JavaScript frontend.</p>
-        <iframe width="330" height="215" src="https://www.youtube.com/embed/V656tg3ssGs?si=NS_8V8iVBHH52jfv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-
-        <div class="project">
-        <h3>Using Gen-AI to Analyze Data Visualizations:</h3>
-        <br>This video demonstrates my use of a large language model (LLM) - Gemini AI - to refine my data visualizations. </br></br>In a simulated scenario, I leverage AI feedback to improve my data visualizations, based on the context (e.g. I am showing my boss some interesting trends in customer engagement. Is this visualization appropriate for who I am talking to and what I am trying to convey?)</p>
-        <iframe width="330" height="215" src="https://www.youtube.com/embed/6J46STRXbIU?si=YOdOeeqCjt8XSCwF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-
-        <div class="project">
-        <h3>Image to JSON Generative AI Project:</h3>
-        <p> Tech stack consisted of Node.js and Google Cloud Vertex AI API. This demonstrates my ability to connect generative AI models to web applications, enhancing creativity and longevity of the app.</p>
-        <iframe width="330" height="215" src="https://www.youtube.com/embed/1sySk-t-XI8?si=5hlp0-8exRiKftTy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        
-        <div class="project">
-        <h3>Real-Time AI Back-End Email Validation:</h3>
-        <p>This project was developed for my systems design class in my Master of Information Systems program. The focus was to work through the SDLC from start to finish, creating the project charter and vision, user stories, working through multiple sprints, incorporating CI/CD techniques, and finally, handing off the project to another team.</p>
-        <p>We used Microsoft Azure DevOps extensively, which I became very familiar with!</p>
-        <iframe width="330" height="215" src="https://www.youtube.com/embed/OIoYT-bw6Qo?si=-RahmF64-xCJP7BX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-
-        <div class="project">
-        <h3>Vanilla JS Firebase Web Apps:</h3>
-        <p>I developed some flashcard applications using JavaScript and JSON to prepare for the PMP exam. This is an example of putting technology to practical use!</p>
-        <a href="https://pmp-flash.web.app/" target="_blank">https://pmp-flash.web.app/</a>
-        <br><br>
-        <a href="https://security-plus-flash.web.app/" target="_blank">https://security-plus-flash.web.app/</a>
-        </div>
-
-    </section>
+            <h2>Recent Work:</h2>
+            <article class="project">
+                <h3>AI-Powered Website Layout Generator:</h3>
+                <p>This project demonstrates the use of AI to rapidly prototype website layouts. By providing a simple natural language description (e.g., "a website for a local bakery with a focus on cakes"), the system generates a basic HTML structure, giving developers a quick starting point for their projects.</p>
+                <p><b>Key Features:</b></p>
+                <ul>
+                    <li><b>AI-Driven HTML Generation:</b> Uses OpenAI's GPT models to interpret user descriptions and create corresponding HTML.</li>
+                    <li><b>Iterative Refinement:</b> Allows users to progressively refine the generated layout by requesting more details or specific features.</li>
+                    <li><b>Backend API (Flask):</b> A Python Flask backend handles communication with the AI and manages data exchange.</li>
+                    <li><b>Frontend Interface (HTML, CSS, JavaScript):</b> A clean and intuitive user interface built with standard web technologies.</li>
+                </ul>
+                <p><b>Tech Stack:</b> Python (Flask), OpenAI API (GPT-3.5-turbo), HTML, CSS, JavaScript</p>
+                <div class="iframe-container">
+                    <iframe src="https://www.youtube.com/embed/ZX3zpiCaNUM?si=jdPnKiRi35dAvN2j" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </article>
+            <article class="project">
+                <h3>YouTube Comments Analyzer:</h3>
+                <p>This Flask web app lets you analyze YouTube comments. Enter a video URL, and it grabs comments using the YouTube Data API. It then stores them in an SQLite database and generates a word cloud visualization using the WordCloud library. You can even search through the comments!</p>
+                <p><b>Tech Stack:</b></p>
+                <ul>
+                    <li><b>Backend:</b> Python, Flask</li>
+                    <li><b>API:</b> YouTube Data API</li>
+                    <li><b>Database:</b> SQLite</li>
+                    <li><b>Visualization:</b> WordCloud (Python library)</li>
+                    <li><b>Frontend:</b> HTML, CSS, JavaScript</li>
+                </ul>
+                <div class="iframe-container">
+                    <iframe src="https://www.youtube.com/embed/evxpQXd3sK8?si=7pQsa4DZJ2kPuT1I" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </article>
+            <article class="project">
+                <h3>Drone Delivery API:</h3>
+                <p>This Drone Delivery API offers a comprehensive solution for managing and tracking drone deliveries. It leverages a Python Flask server to handle backend logic, storing crucial information about drones and pilots, and integrates with Google Maps API for real-time drone tracking visualized on a vanilla HTML and JavaScript frontend.</p>
+                <div class="iframe-container">
+                    <iframe src="https://www.youtube.com/embed/V656tg3ssGs?si=NS_8V8iVBHH52jfv" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </article>
+            <article class="project">
+                <h3>Using Gen-AI to Analyze Data Visualizations:</h3>
+                <p>This video demonstrates my use of a large language model (LLM) - Gemini AI - to refine my data visualizations. In a simulated scenario, I leverage AI feedback to improve my data visualizations, based on the context (e.g. I am showing my boss some interesting trends in customer engagement. Is this visualization appropriate for who I am talking to and what I am trying to convey?)</p>
+                <div class="iframe-container">
+                    <iframe src="https://www.youtube.com/embed/6J46STRXbIU?si=YOdOeeqCjt8XSCwF" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </article>
+            <article class="project">
+                <h3>Image to JSON Generative AI Project:</h3>
+                <p>Tech stack consisted of Node.js and Google Cloud Vertex AI API. This demonstrates my ability to connect generative AI models to web applications, enhancing creativity and longevity of the app.</p>
+                <div class="iframe-container">
+                    <iframe src="https://www.youtube.com/embed/1sySk-t-XI8?si=5hlp0-8exRiKftTy" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </article>
+            <article class="project">
+                <h3>Real-Time AI Back-End Email Validation:</h3>
+                <p>This project was developed for my systems design class in my Master of Information Systems program. The focus was to work through the SDLC from start to finish, creating the project charter and vision, user stories, working through multiple sprints, incorporating CI/CD techniques, and finally, handing off the project to another team.</p>
+                <p>We used Microsoft Azure DevOps extensively, which I became very familiar with!</p>
+                <div class="iframe-container">
+                    <iframe src="https://www.youtube.com/embed/OIoYT-bw6Qo?si=-RahmF64-xCJP7BX" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </article>
+            <article class="project">
+                <h3>Vanilla JS Firebase Web Apps:</h3>
+                <p>I developed some flashcard applications using JavaScript and JSON to prepare for the PMP exam. This is an example of putting technology to practical use!</p>
+                <a href="https://pmp-flash.web.app/" target="_blank">https://pmp-flash.web.app/</a>
+                <br><br>
+                <a href="https://security-plus-flash.web.app/" target="_blank">https://security-plus-flash.web.app/</a>
+            </article>
+        </section>
     </div>
+
     <div class="container">
         <section id="resume-call-to-action" class="fade-in">
             <h2>Interested in Learning More?</h2>
-                <p>
-                    Check out my resume below for more information on the projects and programs I've led over the past decade. As a former Naval Aviator and Officer, I bring a unique blend of leadership, problem-solving, and technical skills to the tech world.
-                </p>
-                <h3>My resume highlights my experience in:</h3>
-                <ul>
-                    <li>Leading high-performing teams</li>
-                    <li>Managing complex projects</li>
-                    <li>Analyzing data and making critical decisions</li>
-                    <li>Adapting to challenging environments</li>
-                </ul>
-                <p>I'm eager to apply these skills to a new career in technology and contribute to innovative and impactful projects.</p>
-                <div id="pdf-section">
-                    <h2 class="clickable" id="resume_link">(click to view/download resume)</h2>
-                    <div class="pdf-content" style="display: none;">
+            <p>Check out my resume below for more information on the projects and programs I've led over the past decade. As a former Naval Aviator and Officer, I bring a unique blend of leadership, problem-solving, and technical skills to the tech world.</p>
+            <h3>My resume highlights my experience in:</h3>
+            <ul>
+                <li>Leading high-performing teams</li>
+                <li>Managing complex projects</li>
+                <li>Analyzing data and making critical decisions</li>
+                <li>Adapting to challenging environments</li>
+            </ul>
+            <p>I'm eager to apply these skills to a new career in technology and contribute to innovative and impactful projects.</p>
+            <div id="pdf-section">
+                <h2 class="clickable" id="resume_link">(click to view/download resume)</h2>
+                <div class="pdf-content" style="display: none;">
                     <iframe src="resume.pdf" width="100%" height="500px" onload="this.style.display='block'"></iframe>
                     <a href="resume.pdf" download>Download Resume</a>
-                    </div>
-        </div>
+                </div>
+            </div>
         </section>
     </div>
+
     <script>
         const fadeInElements = document.querySelectorAll('.fade-in');
 
@@ -138,6 +150,7 @@
             pdfContent.style.display = pdfContent.style.display === 'none' ? 'block' : 'none';
         });
     </script>
+
     <footer>
         <div class="qr-code">
             <img src="qrcode_pctrainor.github.io.png" alt="QR Code to GitHub Profile">
