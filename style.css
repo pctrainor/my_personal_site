@@ -42,9 +42,13 @@ nav ul li a:hover {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.project {
+  margin-bottom: 50px; /* Add space between project sections */
 }
 
 .profile-pic img {
@@ -76,7 +80,7 @@ nav ul li a:hover {
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 0px auto; /* Add space above and below */
 }
 
 .iframe-container iframe {
