@@ -39,19 +39,50 @@
         <section id="recent-work" class="fade-in">
             <h2>Recent Work:</h2>
             <article class="project">
-                <h3>HTML Website Generator - AI-Powered Web Development</h3>
-                <p>Revolutionize your web development process with the HTML Website Generator! This tool harnesses the power of the Ollama language model, specifically the DeepSeek model, to create detailed, semantically rich HTML5 websites based on your ideas.  Simply provide a description of the website you envision, and the AI will generate the HTML structure, including modern styling and responsive design elements.  The iterative refinement process, powered by DeepSeek's capabilities, allows for continuous improvement and expansion of the website's content and structure. Finally, a crucial validation step using OpenAI ensures the generated HTML is complete, valid, and meets all specified requirements. Customize your website's design, structure, and functionality with ease, and enjoy real-time previews to visualize your site as it's being built.</p>
+                <h3>AI Website Generator: Iterative Development with Python, Flask, and Gradio</h3>
+                <p>This project demonstrates an AI-powered system for generating complete HTML websites. It uses the Ollama platform to run local language models, primarily DeepSeek-Coder, to create website content and structure. The system uses an iterative approach, storing each step in a SQLite database, allowing for review and refinement of the generated HTML. A user-friendly Gradio interface allows for easy interaction and real-time previews of the generated website. The final output can be validated using the OpenAI API.</p>
             
                 <p><b>Key Features:</b></p>
                 <ul>
-                    <li><b>DeepSeek-Powered HTML Generation:</b>  Leverages the advanced capabilities of the DeepSeek language model within Ollama to generate valid and semantically correct HTML5 code from user descriptions.  DeepSeek's strong performance in code generation contributes to higher-quality initial HTML output.</li>
-                    <li><b>Iterative Refinement with DeepSeek:</b> The iterative refinement process, driven by DeepSeek, allows for continuous improvement and expansion of the website's content and structure. Each iteration builds upon the previous one, leading to a more complete and polished final product.</li>
-                    <li><b>OpenAI Final Validation:</b>  A final validation step using the OpenAI API ensures the generated HTML is complete, valid, and adheres to all specified requirements, catching any potential errors or inconsistencies.</li>
-                    <li><b>Customizable Parameters:</b>  Offers control over the AI's creativity (temperature) and output length (max tokens) to fine-tune the generation process.</li>
-                    <li><b>Real-time Preview:</b>  Provides a live preview of the generated website, allowing users to visualize the results instantly.</li>
+                    <li><b>Iterative HTML Generation:</b> Builds websites step-by-step, refining the output in each iteration.</li>
+                    <li><b>Database Storage:</b> Stores each iteration's HTML in a SQLite database, enabling review and reconstruction of previous versions.</li>
+                    <li><b>Ollama and DeepSeek-Coder:</b> Utilizes Ollama to run the DeepSeek-Coder language model locally for efficient HTML generation.</li>
+                    <li><b>Flask Backend:</b> Provides API endpoints for communication between the Gradio frontend and the AI agents.</li>
+                    <li><b>Gradio Interface:</b> Offers a simple and intuitive user interface for interacting with the system.</li>
+                    <li><b>Real-time Preview:</b> Displays a live preview of the generated website within the Gradio interface.</li>
+                    <li><b>HTML Validation:</b> Integrates basic HTML validation and optional final validation using the OpenAI API.</li>
+                    <li><b>Bootstrap 5 Integration:</b> Generates websites that incorporate Bootstrap 5 for responsive design and styling.</li>
+                    <li><b>Customizable Parameters:</b> Allows adjustment of AI model parameters like temperature and max tokens.</li>
+                    <li><b>Copy to Clipboard:</b> Enables easy copying of the generated HTML code.</li>
+                </ul>
+            
+                <p><b>Tech Stack:</b></p>
+                <ul>
+                    <li><b>Backend:</b> Python, Flask, asyncio, sqlite3</li>
+                    <li><b>AI Models:</b> Ollama (DeepSeek-Coder), OpenAI API (for validation)</li>
+                    <li><b>Frontend:</b> Gradio, HTML5, CSS3, Bootstrap 5</li>
+                    <li><b>Utilities:</b> Beautiful Soup, html5lib, pyperclip, re, threading, queue</li>
+                </ul>
+                <p><b>Future Development:</b> This project will evolve to incorporate multi-threaded, specialized AI agents for enhanced performance and HTML tag-specific generation.</p>
+            
+                <div class="iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WhZLj-ORNwU?si=91qEX5AUyEsqBVy4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </article>
+            <article class="project">
+                <h3>HTML Website Generator - AI-Powered Web Development</h3>
+                <p>This tool harnesses the power of the Ollama language model, specifically the DeepSeek model, to create detailed, semantically rich HTML5 websites based on your ideas. Simply provide a description of the website you envision, and the AI will generate the HTML structure, including modern styling and responsive design elements. The iterative refinement process, powered by DeepSeek's capabilities, allows for continuous improvement and expansion of the website's content and structure. Finally, a crucial validation step using OpenAI ensures the generated HTML is complete, valid, and meets all specified requirements. Customize your website's design, structure, and functionality with ease, and enjoy real-time previews to visualize your site as it's being built.</p>
+            
+                <p><b>Key Features:</b></p>
+                <ul>
+                    <li><b>DeepSeek-Powered HTML Generation:</b> Leverages the advanced capabilities of the DeepSeek language model within Ollama to generate valid and semantically correct HTML5 code from user descriptions.</li>
+                    <li><b>Iterative Refinement with DeepSeek:</b> The iterative refinement process, driven by DeepSeek, allows for continuous improvement and expansion of the website's content and structure.</li>
+                    <li><b>OpenAI Final Validation:</b> A final validation step using the OpenAI API ensures the generated HTML is complete, valid, and adheres to all specified requirements.</li>
+                    <li><b>Customizable Parameters:</b> Offers control over the AI's creativity (temperature) and output length (max tokens) to fine-tune the generation process.</li>
+                    <li><b>Real-time Preview:</b> Provides a live preview of the generated website, allowing users to visualize the results instantly.</li>
                     <li><b>Basic HTML Validation:</b> Includes a quick initial HTML validation to catch fundamental structural issues early on.</li>
-                    <li><b>Copy to Clipboard:</b>  Enables easy copying of the generated HTML code for use in other projects.</li>
-                    <li><b>Modern Design:</b>  Prompts the AI to use modern design principles, including responsive layouts, CSS custom properties, and accessible color schemes.</li>
+                    <li><b>Copy to Clipboard:</b> Enables easy copying of the generated HTML code for use in other projects.</li>
+                    <li><b>Modern Design:</b> Prompts the AI to use modern design principles, including responsive layouts, CSS custom properties, and accessible color schemes.</li>
                 </ul>
             
                 <p><b>Tech Stack:</b></p>
